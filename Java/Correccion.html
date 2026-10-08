@@ -1,0 +1,100 @@
+<html>
+
+<body>
+    <script>
+        // Ejercicoi 15
+        // Escribe un programa que pida dos variables, y después intercambie sus valores (si porejemplo ponemos 8 en la variable a y 5 en la variable b, que al final del programa la variable
+
+        // let a  = parseFloat(window.prompt("Ingrese el primer número"));
+        // let b  = parseFloat(window.prompt("Ingrese el segundo número"));
+        // let c = a;
+
+
+
+
+        // Ejercicio 17
+        //Escribe un programa que pida al usuario un dígito (n) y calcule y muestre el valor de n+nn+nnn. Por ejemplo si el usuario introduce 5 el programa calcularía 5 + 55 + 555
+
+        //    let n = window.prompt("Ingrese un número");
+        //    let nn = n + n;
+        //    let nnn = nn + n;
+        //    let result = parseInt(n) + parseInt(nn) + parseInt(nnn);
+        //    window.alert(`El resultado es: ${result}`);
+
+
+
+
+        //Ejercicio 18
+        //Escribe un programa que convierta los segundos a horas, minutos y segundos. Por ejemplosi introduce 4000 segundos que muestre el mensaje: 1 horas, 6 minutos, 40 segundos.
+
+        // let totalSeconds = parseInt(window.prompt("Ingrese el tiempo en segundos"));
+        // let remainSecs = totalSeconds % 3600;
+        // let hours = (totalSeconds - remainSecs) / 3600;
+        // let seconds = remainSecs % 60;
+        // let minutes = (remainSecs - seconds) / 60;
+        // alert(`El tiempo es: ${hours} hr, ${minutes} min y ${seconds} sec`);
+
+
+
+
+        //Ejercicio 21
+        //Escribe un programa que genere un número aleatorio entre el 1 y el 100 (pista: hay que utilizar una función, hay que buscarlo en internet ya que no lo hemos visto en clase).
+
+        // console.log(parseInt(Math.random() * 100+1)); **Opción 1**
+        // console.log(Math.random() * (100-1)+1);  **Opción 2**
+
+
+
+
+        //Ejercicio 20
+        //**Escribe un programa que pida un número de minutos y muestre cuantos años y días son.**
+
+        // **Opción 1**
+        // let totalMinutes = parseInt(window.prompt("Ingrese el tiempo en minutos"));
+        // let remainMinutes = totalMinutes % (60*24);
+        // let days = (totalMinutes - remainMinutes) / 1440;
+        // let years = (days - (days % 365)) / 365;
+        // let remainDays = days % 365;
+        // alert(`El tiempo es: ${years} años, ${remainDays} días`);
+
+         // **Opción 1.2 - Haciendo que los dias salgan decimales para ver que no faltan minutos**
+        // let totalMinutes = parseInt(window.prompt("Ingrese el tiempo en minutos"));
+        // let remainMinutes = totalMinutes % (60*24);
+        // let days = (totalMinutes - remainMinutes) / 1440;
+        // let years = (days - (days % 365)) / 365;
+        // let remainDays = (totalMinutes - years*365*24*60) / (24*60);
+        // alert(`El tiempo es: ${years} años, ${remainDays} días`);
+
+        //**Opción 2**
+        // let totalMinutes = 1000000;
+        // let years = (totalMinutes - totalMinutes % (60*24*365)) / (60*24*365);
+        // let days = (totalMinutes - years * 60*24*365) / (60*24);
+        // console.log(`El tiempo es: ${years} años, ${days} días`);
+
+
+
+
+        //Ejercicio 16
+        //Escribe un programa que pida un número de 3 dígitos y que muestre en pantalla el resultado de sumarlos.
+
+        //**Forma adelantada**
+        // let numeroCompleto = window.prompt("Ingrese un número de 3 dígitos");
+        // let primerDigito = parseInt(numeroCompleto[0]);
+        // let segundoDigito = parseInt(numeroCompleto[1]);
+        // let tercerDigito = parseInt(numeroCompleto[2]);
+        // let suma = primerDigito + segundoDigito + tercerDigito;
+        // window.alert(`La suma de los dígitos es: ${suma}`);
+
+        //**Intento mi forma**
+        // let numeroCompleto = window.prompt("Ingrese un número de 3 dígitos"); // 321
+        // let primerDigito = parseInt(numeroCompleto / 100); //= 3
+        // let segundoNumero = parseInt((numeroCompleto - primerDigito * 100)/10); // = 21
+        // let tercerNumero = parseInt((numeroCompleto - primerDigito * 100 - segundoNumero * 10));
+        // let suma = primerDigito + segundoNumero + tercerNumero;
+        // window.alert(`La suma de los dígitos es: ${suma}`);
+
+
+        </script>
+</body>
+
+</html>

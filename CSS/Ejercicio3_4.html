@@ -13,29 +13,58 @@
 
         p {
             line-height: 1.6;
-            margin-bottom: 20px;
+            padding: none;
         }
 
         main {
             background-color: #e790e0;
             color: #105816;
         }
+        div {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .primero {
+            width: 70%;
+        }
+        .segundo {
+            width: 30%;
+            background-color: #89b862;
+            color: #e790e0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .lista {
+            padding: -10px;
+            margin: -3px;
+        }
+
     </style>
 </head>
 
 <body>
     <main>
-        <div>
-            <h1>Ejercicio 6</h1>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolor.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corporis quo velit dolorem? Vitae odio expedita, non incidunt animi eaque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt veritatis laboriosam quae sequi quam ipsa!</p>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, totam.</h1>
-        </div>
-        <div>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolor.</h5>
-            <p></p>
-            <p></p>
+        <div class="container">  
+            <div class="primero">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolor</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam maiores quo, doloremque error sapiente ipsum iste veniam a? Voluptatum nostrum sapiente perspiciatis corrupti. Dolorum, obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugit vel minima consectetur saepe ut quod ipsa alias, cumque facere, non quas accusamus quidem voluptatem?</p>
+            </div>
+            <div class="segundo">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolor.</h4>
+                <p class="lista">Lorem, ipsum dolor.</p>
+                <p class="lista">Lorem, ipsum dolor.</p>
+                <p class="lista">Lorem, ipsum dolor.</p>
+            </div>
         </div>
     </main>
 </body>
