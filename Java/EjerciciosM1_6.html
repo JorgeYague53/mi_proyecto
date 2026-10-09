@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Ejercicios M1 - 6</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Hola</p>
+    </main>
+
+    <script>
+        //Ejercicio 1
+        // const word =  window.prompt("Inserte una palabra")
+        // console.log(word.length)
+        // alert(`La palabra son ${word.length} caracteres`)
+
+        //Ejercio 2
+        // const word = window.prompt("Insert word")
+        // console.log(word.toLowerCase())
+        // alert(` ${word.toLowerCase()}`)
+
+        //Ejercicio 3
+        // const word = window.prompt("Insert word")
+        // console.log(word.toUpperCase())
+        // alert(` ${word.toUpperCase()}`)
+
+        //Ejercicio 4
+        // const const word = window.prompt("Insert word")
+        // let Inter1 = window.prompt("Inserte el numero desde donde quiere empezar el intervalo")
+        // let Inter2 = window.prompt("Inserte el numero desde donde quiere acabar el intervalo")
+        // console.log(word.substring(Inter1, Inter2))
+        // alert(`Su intervalo es ${word.substring(Inter1, Inter2)}`)
+
+        //Ejercicio 5 **A mi manera
+        // let word = window.prompt("Hola, escriba su nombre")
+        // const fraseOriginal = "Hola (word)";
+        // const fraseNueva = fraseOriginal.replace(/\([^)]+\)/, "Jorge");
+        // alert(`${fraseNueva}`)
+
+        //Ejercicio 6 
+        const word = window.prompt("Insert word")
+        let numeroL = word.length
+        let mitad = parseInt(numeroL / 2)
+
+        let fristH = word.substring(0, mitad)
+        let secondH = word.substring(mitad, word.length )
+        console.log(fristH.toLowerCase(), secondH.toUpperCase)
+        alert(` ${word.toLowerCase()}`)
+
+    </script>
+</body>
+
+</html>
