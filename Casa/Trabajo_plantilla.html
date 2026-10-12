@@ -1,20 +1,22 @@
 <html>
-    <head>
-        <style>
-            * {
+
+<head>
+    <style>
+        /* * {
             border: 1px solid #ff0000;
             margin: 0;
-        }
+        } */
 
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
             color: #040404;
+            padding: 20px;
         }
 
         div {
             margin: 10px;
             padding: 10px;
-            text-align: right;
+
         }
 
         nav {
@@ -33,59 +35,410 @@
             display: flex;
             gap: 40px;
             text-decoration: none;
+            background-color: #e0484f;
+            color: #dcdcdc;
+            border-radius: 5px;
         }
+
+        .titleText {
+            color: #f7f5f5;
+        }
+
         a {
             text-decoration: none;
             color: #000000;
         }
+
         .cajaEncabezado {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+
         .imagenEncabezado {
             height: 350px;
             width: 960px;
             object-fit: cover;
             display: block;
         }
+
         .textoCabecera {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-     
 
-        </style>
+        .textoCabecera {
+            text-align: center;
+            font-style: italic;
+            max-width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
 
-    </head>
-    <body>
-        <header>
-                    <nav>
+        .titleDiv {
+            width: fit-content;
+            height: 12px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #e0484f;
+            border-radius: 10px;
+            color: #f7f3f3;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .divisor {
+            border-top: 1px solid #bbb;
+            height: 0;
+            padding: 0;
+        }
+
+        .tresCajas {
+            display: flex;
+            gap: 20px
+        }
+
+        .tresCajas>div {
+            flex: 1 1 0;
+            min-width: 0;
+            margin: 0;
+        }
+
+        .titWLogo {
+            display: flex;
+            align-items: left;
+            padding: 0;
+            justify-content: left;
+            margin: 0;
+
+        }
+
+        .miniLogo {
+            height: 18px;
+            width: 18px;
+            align-items: flex-start;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .imgLogos {
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .Caras {
+            display: flex;
+            flex-direction: column;
+            width: 175px;
+            font-size: small;
+            padding: 0;
+
+        }
+
+        .fiveCaras {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .face {
+            height: 175px;
+            width: 175px;
+        }
+
+        footer {
+            background-color: #dcdcdc;
+            padding: 20px;
+            font-size: small;
+            color: #888;
+        }
+
+        .footerColumnas {
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .columnaBlog {
+            flex: 2;
+            min-width: 0;
+        }
+
+        .columnaEmpresa {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .columnaContacto {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .footerColumnas h4 {
+            font-weight: normal;
+            color: #040404;
+            margin-bottom: 15px;
+        }
+
+        .entradaBlog {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .imgBlog {
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            flex-shrink: 0;
+        }
+
+        .textoBlog {
+            margin: 0;
+            padding: 0;
+        }
+
+        .textoBlog h5 {
+            margin-bottom: 5px;
+        }
+
+        .textoBlog a,
+        .columnaEmpresa a {
+            color: #e0484f;
+        }
+
+        /* Company details */
+        address {
+            font-style: normal;
+            margin-bottom: 15px;
+        }
+
+        .columnaEmpresa p {
+            margin-bottom: 15px;
+        }
+
+        .columnaEmpresa h5 {
+            margin-bottom: 5px;
+        }
+        .footerInferior {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 0 0;
+            padding: 15px 0 0 0;
+            border-top: 1px solid #bbb;
+            font-size: x-small;
+        }
+
+        .enlace {
+            color: #e0484f;
+            font-size: small;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .imgZa {
+            object-position: center top;
+        }
+
+        .imgFace {
+            object-fit: scale-down;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            flex-shrink: 0;
+        }
+
+        .titWLogo h4 {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
             <div id="logo">
-                <h4>TITULO DE LA PAGINA</h4>
+                <h4>COMPOSITION</h4>
                 <p>subtítulo</p>
             </div>
             <div id="links">
-                <a href="#" target="_blank">HOME PAGE</a>
-                <a href="#" target="_blank">STYLE DEMO</a>
-                <a href="#" target="_blank">FULL WIDTH</a>
-                <a href="#" target="_blank">DROPDOWN</a>
-                <a href="#" target="_blank">LINK TEXT</a>
+                <a class="titleText" href="#" target="_blank">HOME PAGE</a>
+                <a class="titleText" href="#" target="_blank">STYLE DEMO</a>
+                <a class="titleText" href="#" target="_blank">FULL WIDTH</a>
+                <a class="titleText" href="#" target="_blank">DROPDOWN</a>
+                <a class="titleText" href="#" target="_blank">LINK TEXT</a>
             </div>
         </nav>
-        </header>
-            <div class="textoCabecera">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ab quibusdam unde? Officia tenetur temporibus commodi laboriosam? Dolore</p>
-            </div>
-            <div class = "cajaEncabezado">
-                <img class = imagenEncabezado src ="Viena.avif" alt="Imagen">
-            </div>
-        <footer>
+    </header>
+    <div class="textoCabecera">
+        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ab quibusdam unde? Officia tenetur
+            temporibus commodi laboriosam? Dolore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum,
+            voluptatem."</p>
+    </div>
+    <div class="cajaEncabezado">
+        <img class=imagenEncabezado src="Viena.avif" alt="Imagen">
+    </div>
+    <div class="divisor"></div>
+    <div class="titleDiv">
+        <p>Our service</p>
+    </div>
+    <div class="tresCajas">
 
+        <div>
+            <div class="titWLogo">
+                <div class="miniLogo"><img class="imgLogos" src="Medalla.png" alt="Logo"></div>
+                <h4> Indonectus facilis</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam nostrum eum ea iure est
+                assumenda provident ratione voluptate impedit, odio minus, explicabo, reiciendis dolor?</p>
+            <p><a class="enlace" href="#">Read more > </a></p>
+        </div>
+        <div>
+            <div class="titWLogo">
+                <div class="miniLogo"><img class="imgLogos" src="Caballo.png" alt="Logo"></div>
+                <h4> Indonectus facilis</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam nostrum eum ea iure est
+                assumenda provident ratione voluptate impedit, odio minus, explicabo, reiciendis dolor?</p>
+            <p><a class="enlace" href="#">Read more > </a></p>
+        </div>
+        <div>
+            <div class="titWLogo">
+                <div class="miniLogo"><img class="imgLogos" src="Ruta.png" alt="Logo"></div>
+                <h4> Indonectus facilis</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam nostrum eum ea iure est
+                assumenda provident ratione voluptate impedit, odio minus, explicabo, reiciendis dolor?</p>
+            <p><a class="enlace" href="#">Read more > </a></p>
+        </div>
+    </div>
+    <div class="divisor"></div>
 
-        </footer>
-    </body>
+    <div class="titleDiv">
+        Our Players
+    </div>
+    <div class="fiveCaras">
+
+        <div class="Caras">
+            <img class="face" src="SZa.JPG" alt="">
+            <p>Name: John Doe</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><a class="enlace" href="#">View Profile > </a></p>
+        </div>
+        <div class="Caras">
+            <img class="face" src="WLulu.jpeg" alt="">
+            <p>Name: John Doe</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><a class="enlace" href="#">View Profile > </a></p>
+        </div>
+        <div class="Caras">
+            <img class="face" src="SE.JPG" alt="">
+            <p>Name: John Doe</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><a class="enlace" href="#">View Profile > </a></p>
+        </div>
+        <div class="Caras">
+            <img class="face" src="WZa.JPG" alt="">
+            <p>Name: John Doe</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><a class="enlace" href="#">View Profile > </a></p>
+        </div>
+        <div class="Caras">
+            <img class="face" src="TLulu.JPG" alt="">
+            <p>Name: John Doe</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p><a class="enlace" href="#">View Profile > </a></p>
+        </div>
+    </div>
+    <div class="divisor"></div>
+    <div class="titleDiv">
+        Latest Work
+    </div>
+    <div class="fiveCaras">
+        <div class="Fotos3">
+            <img src="Cats.avif" alt="Fiuuuuuuu" width="300" height="160">
+        </div>
+        <div class="Fotos3">
+            <img src="Cat.jpg" alt="Fiuuuuuuu" width="300" height="160">
+        </div>
+        <div class="Fotos3">
+            <img src="Cats2.avif" alt="Fiuuuuuuu" width="300" height="160">
+        </div>
+    </div>
+    <footer>
+        <div class="footerColumnas">
+            <section class="columnaBlog">
+                <h4>Latest From The Blog</h4>
+
+                <article class="entradaBlog">
+                    <img class="imgBlog" src="Lulu.jpg" alt="Blog post 1" width="95" height="95">
+                    <div class="textoBlog">
+                        <h5><a href="#">Metuervestas mus lacinia</a></h5>
+                        <p>Convallisijusto vestas mus pellentum aeneanss pibu lum in aliquam volut pat integest nulla.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="entradaBlog">
+                    <img class="imgBlog imgZa" src="Za.jpg" alt="Blog post 2" width="95" height="95">
+                    <div class="textoBlog">
+                        <h5><a href="#">Metuervestas mus lacinia</a></h5>
+                        <p>Convallisijusto vestas mus pellentum aeneanss pibu lum in aliquam volut pat integest nulla.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="columnaEmpresa">
+                <h4>Company Details</h4>
+                <ul>
+                    <li>Company Name</li>
+                    <li>Street Name & Number</li>
+                    <li>Town</li>
+                    <li>Postcode/Zip</li>
+                </ul>
+                <h4></h4>
+                <ul>
+                    <li>Tel: xxxxx xxxxxxxxxx </li>
+                    <li>Fax: xxxxx xxxxxxxxxx</li>
+                    <li>Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
+                </ul>
+                <h4></h4>
+                <h5>Office Hours</h5>
+                <ul>
+                    <li>Monday - Friday: 08:00 - 17:30</li>
+                    <li>Saturday: 08:00 - 13:00</li>
+                </ul>
+            </section>
+            <section class="columnaContacto">
+                <h4>Contact Us</h4>
+                <p>Convallisijusto vestas mus pellentum aeneanss pibu lum in aliquam volut pat integest nulla.</p>
+            </section>
+
+        </div>
+        <div class="footerInferior">
+            <p>Copyright © 2013 - All Rights Reserved - Domain Name</p>
+            <p>Template by OS Templates</p>
+        </div>
+    </footer>
+</body>
+
 </html>
