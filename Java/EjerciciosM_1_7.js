@@ -40,25 +40,56 @@
 // }
 
 // Ejercicio 5
-const day = prompt("escriba un dia de la semana").toLowerCase()
-if (day == "lunes"){
-    alert("Hoy es Lunes")
-}
-if (day == "martes"){
-    alert("Hoy es Martes")
-}
-if ((day == "miercoles") ||(day == "miércoles")){
-    alert("Hoy es Miércoles")
-}
-if (day == "jueves"){
-    alert("Hoy es Jueves")
-}
-if (day == "viernes"){
-    alert("Hoy es Viernes")
-}
-if ((day == "sabado") || (day == "domingo") || (day == "sábado")){
-    alert("Hoy es fin de semana")
-}
+// const day = prompt("escriba un dia de la semana").toLowerCase()
+// if (day == "lunes"){
+//     alert("Hoy es Lunes")
+// }
+// if (day == "martes"){
+//     alert("Hoy es Martes")
+// }
+// if ((day == "miercoles") ||(day == "miércoles")){
+//     alert("Hoy es Miércoles")
+// }
+// if (day == "jueves"){
+//     alert("Hoy es Jueves")
+// }
+// if (day == "viernes"){
+//     alert("Hoy es Viernes")
+// }
+// if ((day == "sabado") || (day == "domingo") || (day == "sábado")){
+//     alert("Hoy es fin de semana")
+// }
+
+// Ejercicio 6
+// const number = parseInt(prompt("Escriba un número"));
+// const numberCub = number * number * number;
+// const numberCua = number * number;
+// if (numberCub >= 1){
+//     alert(`En Némro al cuadrado es ${numberCua} y el número al cubo es ${numberCub}`)       
+//     }
+
+// Ejercicio 7
+// const numerador = parseInt(prompt("Introduzca un Numerador"))
+// const denominador = parseInt(prompt("Introduzca un Denominador"))
+// if (denominador !== 0){
+//     alert( numerador / denominador)
+// } else{
+//     alert("No se puede dividir por cero")
+// }
+
+// Ejercicio 8
+// const firstNum = parseInt(prompt("Introduzca un Número"))
+// const secondNum = parseInt(prompt("Introduzca un Denominador"))
+// if (firstNum > secondNum){
+//     alert(`${firstNum} es mayor que ${secondNum}`)
+// } 
+// if (firstNum < secondNum){
+//     alert(`${firstNum} es menor que ${secondNum}`)
+// } 
+// if (firstNum == secondNum){
+//     alert(`${firstNum} es igual que ${secondNum}`)
+// } 
+
 
 // // Ejercicio 23
 // const year = parseInt(prompt("Dame un año"))
