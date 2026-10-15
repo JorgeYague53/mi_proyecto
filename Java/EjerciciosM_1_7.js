@@ -132,7 +132,7 @@
 //     alert("No tienen ningún dígito en común")
 // }
 
-// Ejercicio
+// Ejercicio 12
 // const puesto = parseInt(prompt("Numero de posicion que ha quedado"))
 //Respuesta A
     // if (puesto == 1){
@@ -158,6 +158,13 @@
 // alert(hoy.toDateString()) 
 
 //Ejercicio 16 (lo hemos dado?)
+// const choice = prompt("¿Eres tonto?").toLowerCase()
+// if (choice == "yes"){
+//     alert("Lo importante es admitirlo")
+// } else if (choice == "no"){
+//     alert("¿Estás seguro?")
+// } else alert("¿En serio no sabes si eres tonto o no?")
+
 
 // Ejercicio 17 
 // const num1 = parseInt(prompt("Primer numero"))
@@ -214,9 +221,9 @@
 
 // Ejercicio 24
 // const number = parseInt(prompt("Escriba un numero de tres digitos"))
-// const c1 = Math.floor(number / 100)      
-// const c2 = Math.floor(number/ 10) % 10   
-// const c3 = number % 10                    
+// const c1 = parseInt(number / 100)      
+// const c2 = parseInt((number - c1 *100) / 10) 
+// const c3 = parseInt (number - c1 * 100 - c2 *10)                    
 // let pares = 0
 // if (c1 % 2 == 0) pares++
 // if (c2 % 2 == 0) pares++
@@ -238,7 +245,32 @@
 //     alert("Bob: Sure!")
 // } else if (frace.includes("!")) {
 //     alert("Bob: Eh! Chill")
-// } else {
+// } else if (sentence.length == 0){
+//     alert("Vale conque esas tenemos")
+// }else {
 //     alert("Whatever")
 // }
 
+// Ejercicio 27 
+const intro = `
+    Welcome to the adventure:
+    Youre in a path a it splits in two, what are you choosing?:
+    a) Right
+    b) Left`
+let secondM =`
+    Now you see a dude in front of you, what do you do?
+    1) Talk to him
+    2) Kill him
+    3) Ignore him`
+let introAnwer = prompt(intro)
+if (intro == "a"){
+        alert("You just died")
+    } else {
+        alert(`You have Spiderman´s zing... Good job...`)
+        prompt(secondM)
+    }
+if (secondM == "1"){
+        alert(`You just obtained a new weapen`)
+} else if (secondM == 2){
+        alert(`You just got cursed`)
+} else alert(`He killed you from behind`)
