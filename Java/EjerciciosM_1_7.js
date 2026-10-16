@@ -252,25 +252,25 @@
 // }
 
 // Ejercicio 27 
-const intro = `
-    Welcome to the adventure:
-    Youre in a path a it splits in two, what are you choosing?:
-    a) Right
-    b) Left`
-let secondM =`
-    Now you see a dude in front of you, what do you do?
-    1) Talk to him
-    2) Kill him
-    3) Ignore him`
-let introAnwer = prompt(intro)
-if (intro == "a"){
-        alert("You just died")
-    } else {
-        alert(`You have Spiderman´s zing... Good job...`)
-        prompt(secondM)
-    }
-if (secondM == "1"){
-        alert(`You just obtained a new weapen`)
-} else if (secondM == 2){
-        alert(`You just got cursed`)
-} else alert(`He killed you from behind`)
+// const intro = `
+//     Welcome to the adventure:
+//     Youre in a path a it splits in two, what are you choosing?:
+//     a) Right
+//     b) Left`
+// let secondM =`
+//     Now you see a dude in front of you, what do you do?
+//     1) Talk to him
+//     2) Kill him
+//     3) Ignore him`
+// let introAnwer = prompt(intro)
+// if (intro == "a"){
+//         alert("You just died")
+//     } else {
+//         alert(`You have Spiderman´s zing... Good job...`)
+//         prompt(secondM)
+//     }
+// if (secondM == "1"){
+//         alert(`You just obtained a new weapen`)
+// } else if (secondM == 2){
+//         alert(`You just got cursed`)
+// } else alert(`He killed you from behind`)
