@@ -1,64 +1,64 @@
 let sistemaSolar = {
   mercurio: {
-    nombre: "mercurio",
-    color: "gris",
+    nombre: "Mercurio",
+    color: "Gris",
     temperatura: 350,
-    imagen: "https://www.astromia.com/fotosolar/fotos/planetamercurio.jpg",
+    imagen: "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-mercurio_c7bafef8_1280x720.jpg",
   },
   venus: {
-    nombre: "venus",
-    color: "blanco",
+    nombre: "Venus",
+    color: "Blanco",
     temperatura: 460,
     imagen:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg",
+      "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-venus_de3a3995_1280x1280.jpg",
   },
   tierra: {
-    nombre: "tierra",
-    color: "morado",
+    nombre: "Tierra",
+    color: "Morado",
     temperatura: 14,
     imagen:
-      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a0ab2a75bafe87f4d3f9a63/acaba-tiempo_0.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL52Hzkw6Ix00O1HORLh9yOFsdGBBzTM5i3sX9RC2-pw&s=10",
   },
   marte: {
-    nombre: "marte",
-    color: "rojo",
+    nombre: "Marte",
+    color: "Rojo",
     temperatura: -46,
     imagen:
-      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365b6b34099b0279c8fb2e/slide-marte.jpg",
+      "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc5/Planet-Mars-Image-source-Digital-Vision.jpg",
   },
   jupiter: {
-    nombre: "jupiter",
-    color: "marrón",
+    nombre: "Júpiter",
+    color: "Marrón",
     temperatura: -121,
     imagen:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jupiter_by_Cassini-Huygens.jpg/280px-Jupiter_by_Cassini-Huygens.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter_OPAL_2024.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original",
   },
   saturno: {
-    nombre: "saturno",
-    color: "amarillo",
+    nombre: "Saturno",
+    color: "Amarillo",
     temperatura: -130,
     imagen:
-      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/558d2b15010e26221b57df75/saturno.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1szC9whwXWUD6eTwcY-GHy4w4-WvXcoC6hXYA6BzHg&s",
   },
   urano: {
-    nombre: "urano",
-    color: "azul",
+    nombre: "Urano",
+    color: "Azul",
     temperatura: -205,
-    imagen: "http://www.manzanares.es/v2/sites/paseo/img/urano/urano1.jpg",
+    imagen: "https://a.files.bbci.co.uk/worldservice/live/assets/images/2014/09/01/140901154302_urano_planeta_624x351_spl.jpg",
   },
   neptuno: {
-    nombre: "neptuno",
-    color: "azul",
+    nombre: "Neptuno",
+    color: "Azul",
     temperatura: -220,
     imagen:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Neptune_Full.jpg/280px-Neptune_Full.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Neptune_Voyager2_color_calibrated.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original",
   },
   pluton: {
-    nombre: "plutón",
-    color: "blanco",
+    nombre: "Plutón",
+    color: "Blanco",
     temperatura: -229,
     imagen:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Nh-pluto-in-true-color_2x_JPEG.jpg/1200px-Nh-pluto-in-true-color_2x_JPEG.jpg",
+      "https://static.wikia.nocookie.net/espacio/images/e/e6/Plut%C3%B3n.jpg/revision/latest?cb=20210131222438&path-prefix=es",
   },
 };
 let contenedor = document.getElementById("Ejercicios")
@@ -69,7 +69,7 @@ for (let i = 1; i <= 3; i++) {
     if (sistemaSolar[planeta]) {
         contenedor.innerHTML += `
             <div>
-                <img src="${sistemaSolar[planeta].imagen}" alt="${sistemaSolar[planeta].nombre}">
+                <img src=${sistemaSolar[planeta].imagen} alt="${sistemaSolar[planeta].nombre}"/>
                 <h1>${sistemaSolar[planeta].nombre}</h1>
                 <p>Color: ${sistemaSolar[planeta].color}</p>
                 <p>Temperatura: ${sistemaSolar[planeta].temperatura} °C</p>
