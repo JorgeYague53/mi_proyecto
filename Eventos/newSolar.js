@@ -63,20 +63,24 @@ let sistemaSolar = {
 };
 let contenedor = document.getElementById("Ejercicios")
 
+const maxPlanets = 3
 
-        //     <div>
-        //         <img src=${sistemaSolar[planeta].imagen} alt="${sistemaSolar[planeta].nombre}"/>
-        //         <h1>${sistemaSolar[planeta].nombre}</h1>
-        //         <p>Color: ${sistemaSolar[planeta].color}</p>
-        //         <p>Temperatura: ${sistemaSolar[planeta].temperatura} °C</p>
-        //     </div>
-        // `
+function search() {
+  let planetToSearch = document.getElementById("my-input").value.toLowerCase()
+  let planet = sistemaSolar[planetToSearch]
 
-function search(){
-    console.log("hola")
-    let planetToSearch = document.getElementById("my-input").value.toLowerCase()
-    console.log(planetToSearch)
+  if (planet) {
+    contenedor.innerHTML = `
+      <div>
+        <h1>${planet.nombre}</h1>
+        <img src="${planet.imagen}" alt="${planet.nombre}" />
+        <p>Color: ${planet.color}</p>
+        <p>Temperatura: ${planet.temperatura} °C</p>
+      </div>`
+  } else {
+    contenedor.innerHTML = `<p>Planeta no encontrado</p>`
+  }
 }
-window.addEventListener("keydown", (event)=> {
-    if(event.key=="enter")search()
+window.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") search()
 })
