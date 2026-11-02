@@ -63,7 +63,16 @@ let sistemaSolar = {
 };
 let contenedor = document.getElementById("Ejercicios")
 
-const maxPlanets = 3
+let planetCount = 3
+
+window.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") search()
+  })
+
+
+
+
+
 
 function search() {
   let planetToSearch = document.getElementById("my-input").value.toLowerCase()
@@ -81,6 +90,3 @@ function search() {
     contenedor.innerHTML = `<p>Planeta no encontrado</p>`
   }
 }
-window.addEventListener("keydown", (event) => {
-  if (event.key == "Enter") search()
-})
