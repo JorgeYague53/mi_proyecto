@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <title>Star Wars</title>
     <style>
@@ -11,28 +10,20 @@
             justify-content: center;
             align-items: center;
         }
-
-        #Ejercicios {
+        main {
             text-align: center;
-        }
-
-        #Ejercicios img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
         }
     </style>
 </head>
-
 <body>
-    <div id="Ejercicios">
-    </div>
-    <div>
-        <input id="my-input" type="text">
-        <button onclick="search()">search</button>
-    </div>
+    <main>
+        <select id="planetas">
+            <option value="">Selecciona un planeta</option>
+        </select>
+
+        <div id="cards"></div>
+    </main>
 
     <script src="StarWars.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        #cards div {
+            width: 170px;
+        }
+
+        #cards h1 {
+            font-size: 16px;
+        }
+
+        #cards img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="day" type="text" placeholder="Día">
+        <input id="month" type="text" placeholder="Mes">
+        <input id="year" type="text" placeholder="Año">
+        <button onclick="searchByDate()">search</button>
+    </div>
+
+    <div id="card"></div>
+
+    <script src="pictureOfTheDayNASA.js"></script>
+</body>
+
+</html>
